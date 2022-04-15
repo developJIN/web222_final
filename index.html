@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lnag="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/eba2f2bd75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top">
+        <span class="basic">
+            <div id="aboutmeIMG">
+                <img id="myimage" src="./aboutme.jpg" alt="my personality" />
+            </div>
+            <span id="nameAndJob">
+                <p id="myfullname">Seongjin Lee</p>
+                <p id="wannabe">Web Developer, software engineer</p>
+            </span>
+            <div id="resumeAndform">
+                <a id="resumelink" href="./MyResume.doc" download>Resume</a>
+                <a id="movetocontact" href="#my-form">Contact Me</a>
+            </div>
+        </span>
+    </div>
+    </span>
+
+
+    </span>
+    </div>
+    <section class="infographic">
+        <div class="honesty">
+            <h3 id="honestyHead">About Me and Academic Honesty</h3>
+            <p id="aboutmyself">Hello, I am Seongjin Lee who is taking web222 course. I am Korean and 24 years old. I
+                like to hang out
+                with a lot of people.
+                <br>About my education, I am studying computer programming
+                and I am enjoying it. I want to be a talented web developer after graduate the school. Making a
+                website is really joyful. I hope to see every classmate at school soon.
+            </p>
+            <p id="declaration">
+                I declare that my assessment is wholly my own work in accordance
+                with Seneca Academic Policy. No part of this assessment has been
+                copied manually or electronically from any other source (including
+                web sites) except for the information supplied by the WEB222
+                instructors and or made available in this assessment for my use. I
+                also declare that no part of this assignment has been distributed to
+                other students.
+            </p>
+            <br />
+            <p><b>Date:</b> <time datetime="2022-04-12 20:00"> APR 12, 2022</time></p>
+        </div>
+        <div class="myinfo">
+            <h3>Basic Information</h3>
+            <p id="myname"><b>NAME:</b> Seongjin Lee</p>
+            <p id="date"><b>DATE:</b> APR 12, 2022</p>
+            <p id="course"><b>COURSE:</b> WEB222</p>
+            <p id="section"><b>SECTION:</b> NAA</p>
+            <p id="professor"><b>PROFESSOR:</b> David Humphrey</p>
+        </div>
+        
+    </section>
+
+    <section class="education">
+        <h3 id="eduHeader">Education</h3>
+        <div class="eduinfo">
+            <div id="leftedu">
+                <p id="gradyear">2021-2022 &lt;expected&gt; <br /><br></p>
+                <p id="diploma">diploma</p>
+            </div>
+            <div id="rightedu">
+                <p id="diploma">Diploma</p>
+                <p id="senecacollege">Seneca College</p>
+                <p id="award">President's Honour List &lt;first year&gt;</p>
+            </div>
+        </div>
+    </section>
+    <form id="my-form" method="POST" action="https://httpbin.org/post">
+        <div>
+            <label for="first-name">* First Name</label><br>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div>
+            <label for="last-name">* Last Name</label><br>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div>
+            <label for="student-id">* Student ID</label><br>
+            <input type="text" id="student-id" name="student-id">
+        </div>
+        <div>
+            <label for="email-address">* Email-Address</label>
+            <input type="email" id="email-address" name="email-address">
+        </div>
+        <div>
+            <label for="phone-number">Phone Number</label>
+            <input type="text" id="phone-number" name="phone-number">
+        </div>
+        <div>
+            <label for="address">* Street Address</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div>
+            <label for="city">* City</label>
+            <input list="city-list" id="city" name="city">
+            <datalist id="city-list">
+                <option value="Toronto"></option>
+                <option value="Vancouver"></option>
+                <option value="Calgary"></option>
+                <option value="Montreal"></option>
+                <option value="Quebec"></option>
+                <option value="Halifax"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="postal-code">* Postal Code</label>
+            <input type="text" id="postal-code">
+        </div>
+        <div>
+            <label for="website-url">Website URL</label>
+            <input type="text" id="website-url" name="website-url">
+        </div>
+        <div>
+            <div>
+                <input type="radio" id="radio-option1" name="options" value="question" onchange="show()">
+                <label for="question">Question</label>
+            </div>
+            <div>
+                <input type="radio" id="radio-option2" name="options" value="comment" onchange="show()">
+                <label for="comment">Comment</label>
+            </div>
+            <div>
+                <input type="radio" id="radio-option3" name="options" value="hiring" onchange="show()">
+                <label for="hiring">Hiring</label>
+            </div>
+            <div id="option1" style="display:none">
+                Hourly rate :
+                <input type="number" id="hourly-rate" name="hourly-rate">
+            </div>
+            <div id="option23" style="display:none">
+                Message :
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
+<script src="./script.js"></script>
